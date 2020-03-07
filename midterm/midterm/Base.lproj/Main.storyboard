@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="midterm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJM-xq-1VR">
+                                <rect key="frame" x="0.0" y="44" width="207" height="409"/>
+                                <color key="backgroundColor" red="1" green="0.99215686270000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="selecColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fbi-KY-s0C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63r-X6-YeP">
+                                <rect key="frame" x="207" y="44" width="207" height="409"/>
+                                <color key="backgroundColor" red="1" green="0.99215686270000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="selecColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kJn-X3-xqt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWm-J1-7vg">
+                                <rect key="frame" x="207" y="453" width="207" height="409"/>
+                                <color key="backgroundColor" red="1" green="0.99215686270000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="selecColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gNk-fp-2Xk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuN-TO-Vsb">
+                                <rect key="frame" x="0.0" y="453" width="207" height="409"/>
+                                <color key="backgroundColor" red="1" green="0.99215686270000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="selecColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXH-II-aIf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nJM-xq-1VR" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="1ut-aC-jwk"/>
+                            <constraint firstItem="nWm-J1-7vg" firstAttribute="leading" secondItem="wuN-TO-Vsb" secondAttribute="trailing" id="6NN-cN-Vff"/>
+                            <constraint firstItem="63r-X6-YeP" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="1/2" id="7Rh-rR-rZm"/>
+                            <constraint firstItem="wuN-TO-Vsb" firstAttribute="centerY" secondItem="nWm-J1-7vg" secondAttribute="centerY" id="8RW-4A-rYv"/>
+                            <constraint firstItem="nWm-J1-7vg" firstAttribute="top" secondItem="63r-X6-YeP" secondAttribute="bottom" id="D7J-3o-4yy"/>
+                            <constraint firstItem="wuN-TO-Vsb" firstAttribute="top" secondItem="nJM-xq-1VR" secondAttribute="bottom" id="Dnw-5r-Jck"/>
+                            <constraint firstItem="wuN-TO-Vsb" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="EmN-bQ-w6S"/>
+                            <constraint firstItem="63r-X6-YeP" firstAttribute="leading" secondItem="nJM-xq-1VR" secondAttribute="trailing" id="FXt-s7-Mro"/>
+                            <constraint firstItem="63r-X6-YeP" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="1/2" id="HCM-Bm-h9p"/>
+                            <constraint firstItem="nJM-xq-1VR" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="Jz8-ix-7Jq"/>
+                            <constraint firstItem="nWm-J1-7vg" firstAttribute="centerX" secondItem="63r-X6-YeP" secondAttribute="centerX" id="OAv-Nw-b7W"/>
+                            <constraint firstItem="nWm-J1-7vg" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="Qka-IW-xc8"/>
+                            <constraint firstItem="nJM-xq-1VR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Sr8-zw-kgx"/>
+                            <constraint firstItem="nJM-xq-1VR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XFz-WN-9gs"/>
+                            <constraint firstItem="wuN-TO-Vsb" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="Xxq-Rh-fkM"/>
+                            <constraint firstItem="nWm-J1-7vg" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="YAV-wm-Ueq"/>
+                            <constraint firstItem="nJM-xq-1VR" firstAttribute="centerY" secondItem="63r-X6-YeP" secondAttribute="centerY" id="xUN-Qz-ASL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+        <!--Select-->
+        <scene sceneID="45o-wQ-w1W">
+            <objects>
+                <viewController storyboardIdentifier="select" id="7H9-hQ-DGt" customClass="Select" customModule="midterm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EjT-qm-32N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdj-UF-4C9">
+                                <rect key="frame" x="0.0" y="16" width="414" height="409"/>
+                                <color key="backgroundColor" red="0.85490196080000003" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="RED"/>
+                                <connections>
+                                    <action selector="colorSelected:" destination="7H9-hQ-DGt" eventType="touchUpInside" id="Euv-IB-sYc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yct-EK-OSw">
+                                <rect key="frame" x="0.0" y="425" width="414" height="409"/>
+                                <color key="backgroundColor" red="0.062745098040000002" green="0.39183011649999999" blue="0.5725726485" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="BLUE"/>
+                                <connections>
+                                    <action selector="colorSelected:" destination="7H9-hQ-DGt" eventType="touchUpInside" id="vKN-L1-Dxw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Wdj-UF-4C9" firstAttribute="width" secondItem="Yct-EK-OSw" secondAttribute="width" id="44e-OX-Eqf"/>
+                            <constraint firstItem="Wdj-UF-4C9" firstAttribute="centerX" secondItem="Yct-EK-OSw" secondAttribute="centerX" id="5mU-m4-McY"/>
+                            <constraint firstItem="Wdj-UF-4C9" firstAttribute="height" secondItem="Yct-EK-OSw" secondAttribute="height" id="7xz-Sl-Gum"/>
+                            <constraint firstItem="Yct-EK-OSw" firstAttribute="top" secondItem="Wdj-UF-4C9" secondAttribute="bottom" id="9u2-na-5Wh"/>
+                            <constraint firstItem="Wdj-UF-4C9" firstAttribute="height" secondItem="DQv-vy-Z4Y" secondAttribute="height" multiplier="1/2" id="N33-jj-ApQ"/>
+                            <constraint firstItem="Wdj-UF-4C9" firstAttribute="width" secondItem="DQv-vy-Z4Y" secondAttribute="width" multiplier="1/2" id="NUR-4d-pqJ"/>
+                            <constraint firstItem="DQv-vy-Z4Y" firstAttribute="top" secondItem="Wdj-UF-4C9" secondAttribute="top" constant="28" id="VrN-c2-w5D"/>
+                            <constraint firstItem="Wdj-UF-4C9" firstAttribute="leading" secondItem="DQv-vy-Z4Y" secondAttribute="leading" id="XMW-z6-4dN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DQv-vy-Z4Y"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0cD-Tw-Ksr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1018.840579710145" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>
