@@ -83,16 +83,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdj-UF-4C9">
-                                <rect key="frame" x="0.0" y="16" width="414" height="409"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdj-UF-4C9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="409"/>
                                 <color key="backgroundColor" red="0.85490196080000003" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="RED"/>
                                 <connections>
                                     <action selector="colorSelected:" destination="7H9-hQ-DGt" eventType="touchUpInside" id="Euv-IB-sYc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yct-EK-OSw">
-                                <rect key="frame" x="0.0" y="425" width="414" height="409"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yct-EK-OSw">
+                                <rect key="frame" x="0.0" y="453" width="414" height="409"/>
                                 <color key="backgroundColor" red="0.062745098040000002" green="0.39183011649999999" blue="0.5725726485" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="BLUE"/>
                                 <connections>
@@ -107,8 +107,8 @@
                             <constraint firstItem="Wdj-UF-4C9" firstAttribute="height" secondItem="Yct-EK-OSw" secondAttribute="height" id="7xz-Sl-Gum"/>
                             <constraint firstItem="Yct-EK-OSw" firstAttribute="top" secondItem="Wdj-UF-4C9" secondAttribute="bottom" id="9u2-na-5Wh"/>
                             <constraint firstItem="Wdj-UF-4C9" firstAttribute="height" secondItem="DQv-vy-Z4Y" secondAttribute="height" multiplier="1/2" id="N33-jj-ApQ"/>
-                            <constraint firstItem="Wdj-UF-4C9" firstAttribute="width" secondItem="DQv-vy-Z4Y" secondAttribute="width" multiplier="1/2" id="NUR-4d-pqJ"/>
-                            <constraint firstItem="DQv-vy-Z4Y" firstAttribute="top" secondItem="Wdj-UF-4C9" secondAttribute="top" constant="28" id="VrN-c2-w5D"/>
+                            <constraint firstItem="Wdj-UF-4C9" firstAttribute="width" secondItem="DQv-vy-Z4Y" secondAttribute="width" id="NUR-4d-pqJ"/>
+                            <constraint firstItem="DQv-vy-Z4Y" firstAttribute="top" secondItem="Wdj-UF-4C9" secondAttribute="top" id="VrN-c2-w5D"/>
                             <constraint firstItem="Wdj-UF-4C9" firstAttribute="leading" secondItem="DQv-vy-Z4Y" secondAttribute="leading" id="XMW-z6-4dN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DQv-vy-Z4Y"/>

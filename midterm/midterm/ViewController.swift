@@ -9,8 +9,17 @@
 import UIKit
 
 
+protocol ViewControllerDelegate: class {
+    func changeBackgroundColor(_ color: UIColor?)
+}
+
+
+
 class ViewController: UIViewController {
 
+    weak var delegate: ViewControllerDelegate?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -28,6 +37,7 @@ class ViewController: UIViewController {
             sender.backgroundColor = color
         }
         
+        delegate?.changeBackgroundColor(sender.backgroundColor)
         self.present(selectVC, animated: true)
     }
 

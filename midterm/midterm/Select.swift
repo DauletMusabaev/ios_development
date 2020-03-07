@@ -9,7 +9,11 @@
 
 import UIKit
 
-class Select: UIViewController {
+class Select: UIViewController, ViewControllerDelegate {
+    func changeBackgroundColor(_ color: UIColor?) {
+        view.backgroundColor = color
+    }
+    
     
     var onSelect: ((UIColor) -> Void)? = nil
     
@@ -29,4 +33,5 @@ class Select: UIViewController {
         
         self.dismiss(animated: true)
     }
+    
 }
